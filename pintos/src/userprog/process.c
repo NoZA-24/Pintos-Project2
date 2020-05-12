@@ -586,7 +586,7 @@ install_page (void *upage, void *kpage, bool writable)
           && pagedir_set_page (t->pagedir, upage, kpage, writable));
 }
 
-/* Save user stack into kernel stack. */
+/* Save data into user stack. */
 void
 argument_stack(char **parse, int count, void **esp)
 {
